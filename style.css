@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-height: 2560px;
+    max-width: 1600px;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container h1 {
+    padding: 100px;
+    font-size: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif cla;
+}
+
+.container img {
+    animation-name: rotation;
+    animation-duration: 000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+body, html {
+
+    background-image: url("https://filmdaily.co/wp-content/uploads/2021/02/walter-dog-lede-768x432.jpg");
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+
+.btn {
+    justify-content: space-between;
+    padding: 0 0 0 0;
+    text-align: center;
+    z-index: 100;
+}
+
+
+
+.pizda {
+    width: 700px;
+    height: 300px;
+    animation-name: rotation;
+    animation-duration: 100ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.pizda .block {
+    width: 100%;
+    height: 50%;
+}
+
+.pizda .block h1 {
+    font-size: 50px;
+}
+
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+
+.fumos {
+    max-width: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: chartreuse;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    background-color: #2B2A2D;
+}
+header .logo{
+    color: rgb(0, 81, 255);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 4px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover{
+    background: rgba(211,211,211, 0.4);
+    color: #2B2A2D;
+}
+span{
+    color: #d9ff00;
+}
+
+.fumo {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+}
+
+/* block */
+
+.block_item {
+    display: fixed;
+    width: 100%;
+    z-index: 1;
+    opacity: .5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.sup_title {
+    font-size: 20px;
+    padding-bottom: 15px;
+    border: 2px solid #18027c;
+    cursor: pointer;
+}
+
+.text {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 60px;
+}
